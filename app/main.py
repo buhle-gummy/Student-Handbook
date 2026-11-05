@@ -55,7 +55,8 @@ def ask_question(request: QuestionRequest):
             "not provided in the context",
             "not available in the context",
             "not mentioned in the context",
-            "does not contain information"
+            "does not contain information",
+            "not explicitly stated"
         ]
 
         if any(phrase in answer_lower for phrase in unknown_phrases):

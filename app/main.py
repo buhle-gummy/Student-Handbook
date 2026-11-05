@@ -50,14 +50,17 @@ def ask_question(request: QuestionRequest):
         answer_lower = answer.lower()
 
         unknown_phrases = [
-            "i don't know",
-            "no information provided",
-            "not provided in the context",
-            "not available in the context",
-            "not mentioned in the context",
-            "does not contain information",
-            "not explicitly stated"
-        ]
+    "i don't know",
+    "no information provided",
+    "not provided in the context",
+    "not available in the context",
+    "not mentioned in the context",
+    "does not contain information",
+    "not explicitly stated",
+    "no specific attendance requirement",
+    "not mentioned in the provided context",
+    "there is no attendance requirement"
+]
 
         if any(phrase in answer_lower for phrase in unknown_phrases):
             return {

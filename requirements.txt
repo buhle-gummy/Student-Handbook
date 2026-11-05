@@ -5,3 +5,5 @@ pypdf
 sentence-transformers
 chromadb
 ollama
+pytest
+httpx
